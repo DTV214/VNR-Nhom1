@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 10 100% 98%;
+    --foreground: 7 28% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 7 28% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 7 28% 12%;
+    --primary: 356 100% 29%;
+    --primary-foreground: 0 0% 100%;
+    --primary-container: 0 74% 42%;
+    --primary-fixed: 6 100% 92%;
+    --secondary: 37 100% 26%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-container: 38 99% 55%;
+    --secondary-fixed: 30 100% 86%;
+    --tertiary: 226 18% 30%;
+    --tertiary-foreground: 0 0% 100%;
+    --tertiary-container: 224 15% 40%;
+    --muted: 8 100% 96%;
+    --muted-foreground: 6 20% 30%;
+    --accent: 8 100% 94%;
+    --accent-foreground: 356 100% 29%;
+    --surface: 10 100% 98%;
+    --surface-low: 8 100% 97%;
+    --surface-high: 8 100% 94%;
+    --surface-highest: 9 71% 91%;
+    --border: 8 42% 81%;
+    --input: 8 42% 81%;
+    --ring: 356 100% 29%;
+    --outline: 5 18% 49%;
+    --outline-variant: 8 42% 81%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background font-body text-foreground antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-primary-container text-primary-foreground;
+  }
+}
+
+@layer utilities {
+  .hero-gradient {
+    background:
+      radial-gradient(circle at 50% 36%, rgba(254, 166, 25, 0.16) 0%, rgba(185, 28, 28, 0.08) 36%, transparent 68%),
+      linear-gradient(135deg, rgba(255, 248, 247, 0.96), rgba(255, 226, 222, 0.72));
+  }
+
+  .dark-history-gradient {
+    background:
+      radial-gradient(circle at 50% 30%, rgba(185, 28, 28, 0.24), transparent 56%),
+      linear-gradient(135deg, #271816 0%, #3e2c2a 48%, #131b2e 100%);
+  }
+
+  .red-line-glow {
+    box-shadow: 0 0 18px rgba(185, 28, 28, 0.55);
+  }
+
+  .gallery-marquee {
+    mask-image: linear-gradient(
+      90deg,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+  }
+
+  .gallery-track {
+    animation: gallery-roll 72s linear infinite;
+  }
+
+  .gallery-marquee:hover .gallery-track {
+    animation-play-state: paused;
+  }
+
+  .gallery-image {
+    animation: gallery-zoom 13s ease-in-out infinite alternate;
+    transform: scale(0.96);
+    transform-origin: center;
+    transition: transform 700ms ease;
+  }
+
+  .gallery-card:hover .gallery-image {
+    animation-play-state: paused;
+    transform: scale(1.08);
+  }
+
+  @keyframes gallery-roll {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  @keyframes gallery-zoom {
+    from {
+      transform: scale(0.96);
+    }
+
+    to {
+      transform: scale(1.08);
+    }
+  }
+}
