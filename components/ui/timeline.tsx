@@ -53,7 +53,7 @@ export function Timeline({ items, className }: TimelineProps) {
                   <h3 className="mt-2 font-display text-2xl font-semibold text-foreground">
                     {item.title}
                   </h3>
-                  <p className="mt-3 line-clamp-3 leading-7 text-muted-foreground">
+                  <p className="mt-3 text-base font-medium leading-7 text-foreground/80 md:text-[17px]">
                     {item.description}
                   </p>
                 </div>

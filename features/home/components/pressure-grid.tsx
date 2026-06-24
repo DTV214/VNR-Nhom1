@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { GlitchVaultCard } from "@/components/ui/glitch-vault-card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { icons, type IconName } from "@/features/home/components/icon-map";
 import { pressureCards } from "@/features/home/data/content";
@@ -15,7 +16,7 @@ export function PressureGrid() {
             const Icon = icons[item.icon as IconName];
 
             return (
-              <Card
+              <GlitchVaultCard
                 className="group overflow-hidden border-outline-variant/70 bg-white/90 transition-all hover:-translate-y-1 hover:border-primary hover:shadow-lg"
                 key={item.title}
               >
@@ -35,11 +36,11 @@ export function PressureGrid() {
                   <CardTitle>{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="line-clamp-3 leading-7 text-muted-foreground">
+                  <p className="text-base font-medium leading-7 text-foreground/80 md:text-[17px]">
                     {item.description}
                   </p>
                 </CardContent>
-              </Card>
+              </GlitchVaultCard>
             );
           })}
         </div>

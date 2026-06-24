@@ -15,7 +15,7 @@ export function DocumentCarousel() {
     <section className="bg-surface-low py-section" id="tu-lieu">
       <div className="container">
         <SectionHeading
-          description="Khu vực này đã sẵn cấu trúc để thay bằng ảnh Cloudinary thật, metadata tư liệu hoặc trích đoạn phân tích."
+          description="Những hình ảnh và dấu mốc tiêu biểu giúp người xem đối chiếu bối cảnh, lựa chọn ngoại giao và bước chuyển từ hòa bình sang kháng chiến trong giai đoạn 1945-1946."
           title="Tư liệu trực quan"
         />
         <Carousel
@@ -42,7 +42,7 @@ export function DocumentCarousel() {
                     <h3 className="font-display text-2xl font-semibold">
                       {slide.title}
                     </h3>
-                    <p className="mt-3 leading-7 text-muted-foreground">
+                    <p className="mt-3 text-base font-medium leading-7 text-foreground/80 md:text-[17px]">
                       {slide.description}
                     </p>
                   </div>

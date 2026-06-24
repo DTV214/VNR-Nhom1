@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import { cloudinaryImage } from "@/features/home/data/content";
-
 export function ContextSection() {
   return (
     <section className="relative overflow-hidden bg-surface-high py-section">
@@ -14,9 +12,9 @@ export function ContextSection() {
             fill
             priority
             sizes="(min-width: 768px) 50vw, 100vw"
-            src={cloudinaryImage}
+            src="https://res.cloudinary.com/dratbz8bh/image/upload/v1782282754/2_13_x8qttq.jpg"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/35 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
         </div>
         <div>
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-primary">
@@ -26,11 +24,10 @@ export function ContextSection() {
             Âm mưu quay lại thống trị và giới hạn của hòa bình
           </h2>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Khó khăn lớn nhất của chính quyền cách mạng là âm mưu quay lại
-            thống trị của thực dân Pháp. Ngay ngày 02/09/1945, quân Pháp gây
-            hấn ở Sài Gòn - Chợ Lớn; đêm 22 rạng sáng 23/09/1945, Pháp nổ súng
-            đánh chiếm Sài Gòn - Chợ Lớn, buộc quân dân Nam Bộ đứng lên kháng
-            chiến.
+            Khó khăn lớn nhất của chính quyền cách mạng là âm mưu quay lại thống
+            trị của thực dân Pháp. Ngay ngày 02/09/1945, quân Pháp gây hấn ở Sài
+            Gòn - Chợ Lớn; đêm 22 rạng sáng 23/09/1945, Pháp nổ súng đánh chiếm
+            Sài Gòn - Chợ Lớn, buộc quân dân Nam Bộ đứng lên kháng chiến.
           </p>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
             Bên cạnh đó, các lực lượng phản động tay sai tìm cách phá Việt Minh

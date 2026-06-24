@@ -35,7 +35,7 @@ export function EscalationSection() {
                 <h3 className="mt-4 font-display text-2xl font-semibold leading-tight">
                   {event.title}
                 </h3>
-                <p className="mt-4 line-clamp-3 leading-7 text-muted-foreground">
+                <p className="mt-4 text-base font-medium leading-7 text-foreground/80 md:text-[17px]">
                   {event.description}
                 </p>
               </div>

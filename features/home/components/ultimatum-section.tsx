@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { ShieldAlert } from "lucide-react";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { GlitchVaultCard } from "@/components/ui/glitch-vault-card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { ultimatumCards } from "@/features/home/data/content";
 
@@ -16,7 +17,7 @@ export function UltimatumSection() {
         />
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {ultimatumCards.map((item, index) => (
-            <Card
+            <GlitchVaultCard
               className="group overflow-hidden border-primary/20 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
               key={item.title}
             >
@@ -39,7 +40,7 @@ export function UltimatumSection() {
                 <CardTitle>{item.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="line-clamp-3 leading-7 text-muted-foreground">
+                <p className="text-base font-medium leading-7 text-foreground/80 md:text-[17px]">
                   {item.description}
                 </p>
                 <div className="mt-6 h-1.5 rounded-full bg-primary-fixed">
@@ -49,7 +50,7 @@ export function UltimatumSection() {
                   />
                 </div>
               </CardContent>
-            </Card>
+            </GlitchVaultCard>
           ))}
         </div>
         <div className="mx-auto mt-10 max-w-4xl rounded-2xl border border-primary/20 bg-primary-fixed/70 p-6 text-center">

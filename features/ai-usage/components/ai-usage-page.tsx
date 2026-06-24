@@ -67,7 +67,7 @@ export function AiUsagePage() {
               <h2 className="mt-4 font-display text-4xl font-bold md:text-5xl">
                 AI hỗ trợ, người nghiên cứu quyết định
               </h2>
-              <p className="mt-5 text-lg leading-8 text-white/72">
+              <p className="mt-5 text-lg leading-8 text-white/75">
                 AI giúp tăng tốc phần tổ chức source và biểu đạt giao diện.
                 Phần nhận định học thuật vẫn cần người nghiên cứu đọc, đối
                 chiếu và chịu trách nhiệm cuối cùng.
@@ -82,7 +82,7 @@ export function AiUsagePage() {
                   <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary font-bold text-white">
                     {index + 1}
                   </span>
-                  <p className="leading-7 text-white/82">{step}</p>
+                  <p className="leading-7 text-white/80">{step}</p>
                 </div>
               ))}
             </div>

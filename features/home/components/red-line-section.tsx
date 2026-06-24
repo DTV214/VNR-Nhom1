@@ -21,7 +21,7 @@ export function RedLineSection() {
                 <Handshake className="size-10" />
                 Nhượng bộ
               </h3>
-              <p className="mt-6 text-lg leading-8 text-white/72">
+              <p className="mt-6 text-lg leading-8 text-white/75">
                 Là giải pháp ngoại giao khôn khéo: lùi một bước để bảo toàn lực
                 lượng, củng cố chính quyền non trẻ và chuẩn bị lâu dài cho nền
                 độc lập.
@@ -41,7 +41,7 @@ export function RedLineSection() {
                 <span>Đầu hàng</span>
                 <Ban className="size-10" />
               </h3>
-              <p className="mt-6 text-lg leading-8 text-white/72">
+              <p className="mt-6 text-lg leading-8 text-white/75">
                 Là sự từ bỏ chủ quyền thiêng liêng, chấp nhận thân phận thuộc
                 địa và đi ngược lại khát vọng độc lập đã được nhân dân lựa chọn.
               </p>
