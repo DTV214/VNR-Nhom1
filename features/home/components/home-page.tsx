@@ -12,6 +12,7 @@ import { RedLineSection } from "@/features/home/components/red-line-section";
 import { SiteFooter } from "@/features/home/components/site-footer";
 import { SiteHeader } from "@/features/home/components/site-header";
 import { UltimatumSection } from "@/features/home/components/ultimatum-section";
+import { VideoArchiveBanner } from "@/features/home/components/video-archive-banner";
 
 export function HomePage() {
   return (
@@ -22,6 +23,7 @@ export function HomePage() {
         <OpeningProblemSection />
         <PressureGrid />
         <ContextSection />
+        <VideoArchiveBanner />
         <DiplomacySection />
         <RedLineSection />
         <EscalationSection />

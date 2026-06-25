@@ -31,6 +31,15 @@ export const navItems = [
   { label: "AI Usage", href: "/ai-usage" },
 ];
 
+export const diplomacyVideo = {
+  src: "https://res.cloudinary.com/dratbz8bh/video/upload/v1782360238/Download_e9elzo.mp4",
+  title: "Tư liệu chuyển động trước thềm ngoại giao",
+  eyebrow: "Tư liệu trực quan",
+  description:
+    "Đoạn phim được đặt trước phần Hành trình ngoại giao để người xem cảm nhận rõ hơn bầu không khí lịch sử: hòa bình vẫn được nỗ lực gìn giữ, nhưng chủ quyền dân tộc đã đứng trước thử thách quyết định.",
+  note: "Hãy quan sát nhịp chuyển cảnh, gương mặt và không khí thời cuộc để thấy vì sao mỗi quyết định ngoại giao năm 1946 đều mang sức nặng của vận mệnh dân tộc.",
+};
+
 export const hoChiMinhGallery = [
   {
     title: "Chân dung Chủ tịch Hồ Chí Minh",
